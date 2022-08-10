@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+  margin: 30px auto;
+  font-family: "Fira Sans", sans-serif;
+  max-width: 621px;
+  color: #5a6275;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Weather {
+  border: 4px solid #5a6275;
+  display: block;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+  margin: 30px -3px;
+  padding: 50px 16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Main-header {
+  display: block;
+  margin: 0 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Main-header .boxes {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.Main-header .boxes-border {
+  border: 4px solid #5a6275;
+  margin-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Main-header .beauty {
+  width: 320px;
+}
+.Main-information {
+  margin-left: 40px;
+}
+.Main-information h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: -4px;
+}
+.Main-information a {
+  text-decoration: none;
+  color: #5a6275;
+}
+.Main-information i:hover,
+a:hover {
+  color: #fba502;
+}
+.Main-information .main-information-header {
+  font-size: 25px;
+}
+.Main-information .main-information-section {
+  font-size: 14px;
+}
+.Main-information .margin-right {
+  margin-right: 60px;
+}
+.Main-information .main-grade {
+  font-weight: bold;
+  font-size: 50px;
+}
+.Main-information .main-icon {
+  width: 100px;
+  padding-top: 40px;
+}
+@media (max-width: 375px) {
+  .Main-header .beauty {
+    width: 280px;
   }
 }
