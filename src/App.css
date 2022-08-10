@@ -34,11 +34,11 @@
   font-size: 50px;
   margin-left: -4px;
 }
-.Main-information a {
+a {
   text-decoration: none;
   color: #5a6275;
 }
-.Main-information i:hover,
+i:hover,
 a:hover {
   color: #fba502;
 }
@@ -58,6 +58,14 @@ a:hover {
 .Main-information .main-icon {
   width: 100px;
   padding-top: 40px;
+}
+.Footer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.Footer i {
+  font-size: 30px;
 }
 @media (max-width: 375px) {
   .Main-header .beauty {
