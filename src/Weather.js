@@ -1,12 +1,10 @@
 import React from "react";
 import SearchEngine from "./SearchEngine";
-import MainInformation from "./MainInformation";
 
 export default function Weather() {
   return (
-    <div className="Weather box-shadow">
+    <div className="Weather box-shadow mb-3">
       <SearchEngine />
-      <MainInformation />
     </div>
   );
 }

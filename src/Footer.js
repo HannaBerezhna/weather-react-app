@@ -11,21 +11,21 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-instagram"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/hanna-berezhna-88277a234/"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/HannaBerezhna/weather-react-app"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-github-square"></i>
+          <i className="fa-brands fa-github-square"></i>
         </a>
       </div>
     </div>
