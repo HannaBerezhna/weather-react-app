@@ -3,13 +3,13 @@ import "./App.css";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <Weather />
-      <Footer />
+      <div className="cointainer">
+        <Weather />
+        <Footer />
+      </div>
     </div>
   );
 }
-
-export default App;

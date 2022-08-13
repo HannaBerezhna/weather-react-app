@@ -4,7 +4,7 @@ import MainInformation from "./MainInformation";
 
 export default function Weather() {
   return (
-    <div className="Weather">
+    <div className="Weather box-shadow">
       <SearchEngine />
       <MainInformation />
     </div>
