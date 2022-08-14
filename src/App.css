@@ -53,7 +53,7 @@ a:hover {
   font-size: 14px;
 }
 .Main-information .margin-right {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 .Main-information .main-grade {
   font-weight: bold;
@@ -62,7 +62,7 @@ a:hover {
 }
 .Main-information .main-icon {
   width: 100px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .Footer {
   display: block;

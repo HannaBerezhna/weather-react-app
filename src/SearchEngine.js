@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 export default function Header() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,11 +11,12 @@ export default function Header() {
       temperature: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: "Monday, 18:00",
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       mingrade: Math.round(response.data.main.temp_min),
       maxgrade: Math.round(response.data.main.temp_max),
       description: response.data.weather[0].main,
+      icon: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
     });
   }
 
@@ -41,7 +43,10 @@ export default function Header() {
           <div className="row">
             <div className="col-md-6 col-sm-6">
               <h1> {weatherData.city} </h1>
-              <div className="main-information-header">{weatherData.date}</div>
+              <div className="main-information-header">
+                {" "}
+                <FormatDate date={weatherData.date} />{" "}
+              </div>
               <div className="main-information-section">
                 Humidity: {weatherData.humidity} %
               </div>
@@ -53,8 +58,8 @@ export default function Header() {
               <div className="d-flex justify-content-end margin-right">
                 <div>
                   <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                    alt="Clear"
+                    src={weatherData.icon}
+                    alt={weatherData.description}
                     className="main-icon"
                   />
                 </div>
@@ -67,7 +72,7 @@ export default function Header() {
                     <span>{weatherData.mingrade} </span>° /
                     <span> {weatherData.maxgrade}</span>°
                   </div>
-                  <div className="main-information-header">
+                  <div className="main-information-header text-capitalize">
                     {" "}
                     {weatherData.description}
                   </div>
