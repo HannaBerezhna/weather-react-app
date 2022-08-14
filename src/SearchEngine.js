@@ -17,7 +17,7 @@ export default function SearchEngine(props) {
       mingrade: Math.round(response.data.main.temp_min),
       maxgrade: Math.round(response.data.main.temp_max),
       description: response.data.weather[0].main,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+      icon: response.data.weather[0].icon,
     });
   }
 

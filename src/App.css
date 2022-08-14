@@ -15,7 +15,7 @@
 }
 .Main-header {
   display: block;
-  margin: 0 10px;
+  margin: 0 5px;
   margin-bottom: 10px;
 }
 .Main-header .boxes {
@@ -61,8 +61,8 @@ a:hover {
   margin-top: -10px;
 }
 .Main-information .main-icon {
-  width: 100px;
   padding-top: 20px;
+  margin-right: 10px;
 }
 .Footer {
   display: block;
