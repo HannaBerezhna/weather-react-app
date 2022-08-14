@@ -1,6 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherUnit from "./WeatherUnit";
 
 export default function MainInformation(props) {
   return (
@@ -25,10 +26,7 @@ export default function MainInformation(props) {
               <WeatherIcon code={props.info.icon} />
             </div>
             <div>
-              <div className="main-grade"> {props.info.temperature}°</div>
-              <div className="main-information-section">
-                <a href="/"> °C </a> |<a href="/"> °F </a>
-              </div>
+              <WeatherUnit celsius={props.info.temperature} />
               <div className="main-information-section">
                 <span>{props.info.mingrade} </span>° /
                 <span> {props.info.maxgrade}</span>°
