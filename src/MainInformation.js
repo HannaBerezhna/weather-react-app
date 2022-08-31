@@ -23,7 +23,7 @@ export default function MainInformation(props) {
         <div className="col-md-6 col-sm-6">
           <div className="d-flex justify-content-end margin-right">
             <div className="main-icon">
-              <WeatherIcon code={props.info.icon} />
+              <WeatherIcon code={props.info.icon} size={85}/>
             </div>
             <div>
               <WeatherUnit celsius={props.info.temperature} />

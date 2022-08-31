@@ -5,13 +5,19 @@
   color: #5a6275;
 }
 .Weather {
-  border: 4px solid #5a6275;
   display: block;
   margin: auto;
-  padding: 40px 20px;
+}
+.border-section {
+  border: 4px solid #5a6275;
 }
 .box-shadow {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.markUp 
+  {
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .Main-header {
   display: block;
@@ -49,11 +55,11 @@ a:hover {
 .Main-information .main-information-header {
   font-size: 25px;
 }
-.Main-information .main-information-section {
+.main-information-section {
   font-size: 14px;
 }
 .Main-information .margin-right {
-  margin-right: 40px;
+  margin-right: 45px;
 }
 .Main-information .main-grade {
   font-weight: bold;
@@ -72,8 +78,16 @@ a:hover {
 .Footer i {
   font-size: 30px;
 }
+.Spinner {
+  text-align: center;
+  border: 4px solid #5a6275;
+}
 @media (max-width: 375px) {
   .Main-header .beauty {
     width: 280px;
   }
+}
+
+.Footer a:not(:first-child) {
+  margin-left: 5px;
 }

@@ -1,0 +1,13 @@
+.Forecast .border-hover:hover {
+  background: #fba502;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+}
+.Forecast {
+  text-align: center;
+  padding: 15px 10px;
+}
+.Forecast .temp-min {
+  opacity: 0.8;
+}
